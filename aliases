@@ -1,4 +1,5 @@
 alias ws="cd ~/workspace"
 alias own="cd ~/pet-projects"
 alias test-all="sbt clean cleanFiles compile test it:test"
-alias get="git clone"
+alias gc="git clone"
+
