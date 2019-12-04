@@ -1,6 +1,18 @@
+function git_workflow {
+	if [ $# -eq 1 ]
+		then 
+			git add .
+			git commit -m \"$@\" 
+			git push
+	else 
+		echo "Please enter a commit message before pushing"
+	fi
+}
+
 alias ws="cd ~/workspace"
 alias own="cd ~/pet-projects"
 alias test-all="sbt clean cleanFiles compile test it:test"
 alias gc="git clone"
 alias gac="git add . && git commit -m"
+alias gacp='git_workflow'
 
