@@ -18,3 +18,5 @@ alias gacp='git_workflow'
 alias gb="git checkout -b"
 alias gpl="git pull"
 alias profile="nano ~/pet-projects/self-bash-profile/aliases"
+alias dcu="docker kill $(docker ps -q); docker-compose up"
+
