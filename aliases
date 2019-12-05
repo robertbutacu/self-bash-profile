@@ -16,6 +16,6 @@ alias gc="git clone"
 alias gac="git add . && git commit -m"
 alias gacp='git_workflow'
 alias gb="git checkout -b"
-alias gp="git pull"
+alias gpl="git pull"
 alias profile="nano ~/pet-projects/self-bash-profile/aliases"
 
