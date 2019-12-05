@@ -1,7 +1,6 @@
 function git_workflow {
 	if [ $# -eq 1 ]
 		then 
-			git commit -m \"$1\"
 			git add .
 			git commit -m \"$@\" 
 			git push
@@ -16,4 +15,7 @@ alias test-all="sbt clean cleanFiles compile test it:test"
 alias gc="git clone"
 alias gac="git add . && git commit -m"
 alias gacp='git_workflow'
+alias gb="git checkout -b"
+alias gp="git pull"
+alias profile="nano ~/pet-projects/self-bash-profile/aliases"
 
