@@ -2,7 +2,7 @@ function git_workflow {
 	if [ $# -eq 1 ]
 		then 
 			git add .
-			git commit -m "$@" 
+			git commit -m $@
 			git push
 	else 
 		echo "Please enter a commit message before pushing"
@@ -18,4 +18,3 @@ alias gacp='git_workflow'
 alias gb="git checkout -b"
 alias gpl="git pull"
 alias profile="nano ~/pet-projects/self-bash-profile/aliases"
-
